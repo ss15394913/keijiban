@@ -18,9 +18,6 @@ public class ThWriteServlet extends HttpServlet{
 	WriteExecuter We =new WriteExecuter();
 	ThReadExecuter TRE=new ThReadExecuter();
 	
-	String cTi 	=("");//checkTitle
-	String cC		=("");//checkCat
-	String cN	=("");//checkName
 	String cTe	=("");//checkText
 	
 	public void doPost(HttpServletRequest req,HttpServletResponse res)
@@ -44,18 +41,6 @@ public class ThWriteServlet extends HttpServlet{
 		if(title.length()==0 || title == null){
 			title="名無しのスレッド";
 		}
-		if(cTi.equals(title)){
-            res.sendRedirect("/kb/threaderror.html");
-			return;
-        }
-		if(cC.equals(category)){
-            res.sendRedirect("/kb/threaderror.html");
-			return;
-        }
-		if(cN.equals(comname)){
-            res.sendRedirect("/kb/threaderror.html");
-			return;
-        }
 		if(cTe.equals(comtext)){
             res.sendRedirect("/kb/threaderror.html");
 			return;
@@ -89,10 +74,6 @@ public class ThWriteServlet extends HttpServlet{
 		
 		ArL=(ArrayList)TRE.execute(a);
 		
-		
-		cTi	=(title);//checkTitle
-		cC	=(category);//checkCat
-		cN	=(comname);//checkName
 		cTe	=(comtext);//checkText
 		
 		System.out.println("これがタイトルだ！！！"+title);
