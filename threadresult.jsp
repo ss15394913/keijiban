@@ -9,7 +9,7 @@
 <html>
 <head>
 	<title>スレッド一覧</title>
-	<link href="css/style2.css" rel="stylesheet" type="text/css" />
+	<link href="css/threRsult.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	
@@ -31,7 +31,7 @@
 
 	<hr>
 	
-	<h1>スレッド一覧</h1>
+	<h1>スレッド一覧<br><font size="+0">(TOPに戻る)</font></h1>
 	
 	<c:if test="${ fn:length(al) < 100}" >
 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -49,7 +49,7 @@
 	</div>
 	<div id="biaoge" style=" text-align:center;">
 	
-		<tr> <th>スレッド作成画面</th></tr>
+		<tr> <th>スレッド作成フォームへ</th></tr>
 		<br>
 		<br>
 				<c:forEach var="tb" items="${al}">

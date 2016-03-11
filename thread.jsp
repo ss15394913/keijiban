@@ -5,14 +5,14 @@
 	
 <html>
 <head>
-	<link href="css/style2.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/makeThread.css" type="text/css">
 	<title>スレッド作成</title>
 </head>
 <body>
 	<div class="text" style=" text-align:center;">
 	<h1>スレッド作成フォーム</h1>
-	<a href="index.html">トップ</a>
-	<a href="selectthread">スレッド選択</a>
+	<a href="index.html">トップへ</a>
+	<a href="selectthread">スレッド一覧へ</a>
 	<hr>
 	<br>
 	<form action='writethread' method='Post'>

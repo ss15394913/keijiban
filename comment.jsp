@@ -10,10 +10,13 @@
 <html>
 <head>
 	<title>${tb.title}</title>
-	<link href="css/style2.css" rel="stylesheet" type="text/css" />
+	
 </head>
 <body>
+	<link rel="stylesheet" href="css/comment.css" type="text/css">
+	
 
+	</center>
 	<div id="header">
 	</div>
 
@@ -28,7 +31,7 @@
 	<h3>カテゴリ：${tb.category}</h3>
 
 	<a href="/kb">TOPページへ</a>
-	<a href="/kb/selectthread">スレッド選択</a>
+	<a href="/kb/selectthread">スレッド一覧へ</a>
 	<a href="#footer">ページの一番下へ↓</a>
 	
 	<hr>
@@ -36,7 +39,7 @@
 		<c:out value="${cb.commentNo}"/>:
 		<c:out value="${cb.name}" />
 		<c:out value="${cb.date}"/><br>
-		<pre><c:out value="${cb.text}"/></pre> <br>
+		<pre ><c:out value="${cb.text}"/></pre> <br>
 	</c:forEach>
 	
 	<hr><hr><br>
